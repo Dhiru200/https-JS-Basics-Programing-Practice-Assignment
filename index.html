@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> problem 1 </title>
+  </head>
+  <div>
+  <body>
+    <script>
+      var number = prompt ("5");
+      var fact = 1;
+
+
+      for(var i=1;i<=number;i++){
+        fact = fact*i;
+      }
+   document.write("factorail is "+fact);  
+  
+    </script> 
+  </div>
+
+  <div>
+        <script type="text/javascript">
+        var i,type;
+        function Scube()
+        {
+            type=document.main.txtvalue.value;
+            i=type*type*type;
+            document.main.results.value=i;
+        }
+        </script>
+  </head>
+  <body>
+    <form name="main">
+        Enter your value here:<input type="text" name="txtvalue" value="2"><br><br>
+        <input type="button" value="show cube" onclick="Scube();">
+        <input name="results">
+
+    </form>
+  </div>
+
+</body>
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>problem 3</title>
+</head>
+
+<body>
+    <h3>Enter Equilateral Triangle side value</h3>
+    <input type="text" id="side">
+    <input onclick="myFunction()" type="button" value="submit" id="submit">
+    <p id="ans"></p>
+</body>
+
+</html>
+
+<script>
+    function myFunction() {
+        let a = document.getElementById("side").value;
+        let ans = (Math.sqrt(3) / 4) * (a * a);
+        // alert(parseFloat(ans).toFixed(2))
+        ans = parseFloat(ans).toFixed(2)
+        document.getElementById("ans").innerHTML = "<h3>Your Answer is:</h3><p>" + ans + "</p>"
+    }
+</script>
+
+</html>
+
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>sum of digits</title>
+  </head>
+  <body>
+<script>
+    
+    function sumOfDigitsFrom1ToN(n)
+    { 
+        let result = 0;
+      
+        
+        for (let x = 1; x <= n; x++)
+            result += sumOfDigits(x);
+      
+        return result;
+    }
+      
+   
+    function sumOfDigits(x)
+    {
+        let sum = 0;
+          
+        while (x != 0)
+        {
+            sum += x % 10;
+            x = parseInt(x / 10, 10);
+        }
+          
+        return sum;
+    }
+     
+    let n = 328;
+          
+    document.write("Sum of digits"
+                      + " in numbers from 1 to "
+                      + n + " is "
+                      + sumOfDigitsFrom1ToN(n));
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Write a JavaScript program to convert temperatures to and from celsius, fahrenheit</title>
+</head>
+
+<body>
+  <h3>Enter Celcius temperature</h3>
+  <input placeholder="Enter temperature" type="number" id="temp">
+  <input onclick="cToF()" type="button" value="submit" id="submit">
+  <p id="ans"></p>
+</body>
+
+<script>
+  function cToF(celsius) {
+    const cTemp = document.getElementById("temp").value;
+    const cToFahr = cTemp * 9 / 5 + 32;
+    const message = `${cTemp}\xB0C is ${cToFahr} \xB0F.`;
+    console.log(message);
+    document.getElementById("ans").innerHTML = message
+  }
+</script>
+
+</html>
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>sum of digits</title>
+  </head>
+  <body>
+<script>
+    
+    function sumOfDigitsFrom1ToN(n)
+    { 
+        let result = 0;
+      
+        
+        for (let x = 1; x <= n; x++)
+            result += sumOfDigits(x);
+      
+        return result;
+    }
+      
+   
+    function sumOfDigits(x)
+    {
+        let sum = 0;
+          
+        while (x != 0)
+        {
+            sum += x % 10;
+            x = parseInt(x / 10, 10);
+        }
+          
+        return sum;
+    }
+     
+    let n = 328;
+          
+    document.write("Sum of digits"
+                      + " in numbers from 1 to "
+                      + n + " is "
+                      + sumOfDigitsFrom1ToN(n));
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>nth term of series</title>
+  </head>
+  <body>
+      <script>
+          function Django(){
+              var mars, no;
+              mars=document.pebbles.stones.value;
+              no = mars*mars;
+
+              if (mars>0)
+              {
+                  inputText =no;
+              }
+              else if (mars==0)
+              {
+                  inputText = 0;
+              }
+              else{
+                  inputText ="Error";       
+                
+              }
+
+              var house = document.getElementById("people");
+              house.innerHTML = inputText;
+    
+            }
+      </script>
+      </body>
+      </html>
+      <!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>sum of digits</title>
+  </head>
+  <body>
+      <script>
+          function(){
+              bar maths, num;
+
+              maths=document.sunny.john.value;
+              num=maths.replace(/\s/g,'').length;
+
+              if (maths>"0")
+              {
+                  sci=num;
+                
+              }
+              else if(maths=="0")
+              {
+                sci=0;
+              }
+              else
+              {
+                  sci="Error"
+              }
+              var snow = document.getElementById("mine");
+              snow.innerHTML = sci;
+          }
+         
+      </script>
+      </body>
+      </html>
